@@ -1,0 +1,15 @@
+<ul class="pagination">
+    <li class="page-item" [ngClass]="{'disabled':config.page === 1}"><a class="page-link" (click)="setPage(config.page-1)">
+        Previous
+    </a>
+    </li>
+    <li class="page-item" *ngFor="let page of pages" [ngClass]="{'active':config.page===page}">
+        <a class="page-link" (click)="setPage(page)">
+            {{page}}
+        </a>
+    </li>
+    <li class="page-item" [ngClass]="{'disabled': config.total_pages === config.page}"><a class="page-link" (click)="setPage(config.page+1)">
+        Next
+    </a>
+    </li>
+</ul>

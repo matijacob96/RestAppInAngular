@@ -14,8 +14,12 @@ export class ReqresService {
     return this.http.get(`${PATH}${request}`);
   }
 
-  getUsers() {
-    return this.makeGetRequest('users');
+  getUsers(page: any = null) {
+    if (!page){
+      return this.makeGetRequest('users');
+    } else{
+      return this.makeGetRequest(`users?page=${page}`);
+    }
   }
 
   getUser(id: number) {

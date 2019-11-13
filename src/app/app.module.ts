@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { UserDetailComponent } from './components/user/user-detail.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PagerComponent } from './components/pager/pager.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,16 @@ import { UserDetailComponent } from './components/user/user-detail.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    PagerComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
