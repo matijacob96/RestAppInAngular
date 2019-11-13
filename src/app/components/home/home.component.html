@@ -3,7 +3,7 @@
 <div class="container" style="margin-top: 40px;" *ngIf="! loading">
     <ul>
         <li *ngFor="let user of users">
-            <img [src]="user.avatar">
+            <img [src]="user.avatar | noimage">
             <p>{{user.first_name}} {{user.last_name}}</p>
             <div style="padding-top: 5px; width: 18rem;">
                 <button class="btn btn-outline-primary btn-sm" (click)="userDetails(user.id)">Details</button>
