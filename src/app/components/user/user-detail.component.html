@@ -1,0 +1,32 @@
+<div class="container" style="margin-top: 40px;">
+    <div class="card" style="width: 100%;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4" style="text-align: center;">
+                    <img *ngIf="user.avatar" [src]="user.avatar" class="card-img-top img-thumb" [alt]="user.first_name">
+
+                    <h5 class="card-title">{{user.first_name}}</h5>
+                </div>
+                <div class="col-8">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae tempus nisl. Nunc aliquet odio et orci ultrices dapibus. Fusce in turpis vel nisi iaculis semper a accumsan justo. Maecenas ultrices mauris vel nunc gravida volutpat.
+                        Praesent interdum imperdiet arcu, eget consectetur enim placerat sed. Praesent finibus blandit accumsan. Sed sit amet lorem quis neque volutpat hendrerit id vitae purus. Fusce porta urna massa, ut tristique nibh pretium eu. Aliquam
+                        eget massa ornare, porttitor dolor sit amet, ullamcorper ante. Cras sagittis pellentesque turpis, et aliquet mi mollis sit amet. Mauris ac leo ac sapien molestie tincidunt. Sed commodo odio eu lorem rhoncus venenatis. Duis quis
+                        accumsan ipsum. Suspendisse nec blandit massa. Nulla mauris diam, tempor at justo nec, varius tincidunt turpis. In quis finibus arcu. Aenean pellentesque augue sed metus imperdiet commodo. Vestibulum rutrum turpis molestie accumsan
+                        condimentum. Sed congue mi et magna placerat facilisis eget ut neque. Praesent vel nisl iaculis, consequat elit ut, sagittis orci. Vivamus pretium nulla velit, ut pellentesque velit pellentesque at. Vestibulum varius tellus nisl,
+                        efficitur viverra risus dictum a. Duis eget turpis nisi. Curabitur vulputate vestibulum arcu, quis consequat diam lobortis et. Quisque eros metus, blandit a faucibus sed, ullamcorper vel ipsum. Praesent finibus dapibus ipsum eu
+                        tristique. Nunc aliquet rhoncus fringilla. Etiam non hendrerit nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt sollicitudin nisi nec tincidunt. Vestibulum ornare
+                        tellus quis ex mattis, in aliquam arcu sodales. Nam egestas aliquam ipsum eget vulputate. Donec et placerat nibh, at sagittis purus. Donec turpis diam, tempor in nisl vitae, mollis hendrerit justo. Vivamus molestie et tellus et
+                        accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin elit purus, convallis vel aliquet quis, eleifend eget libero. Donec quis massa in magna lobortis dapibus eu quis lacus.
+                        Suspendisse in varius lorem, sit amet ultricies velit. Praesent at condimentum nibh, vitae imperdiet lectus. Nullam pharetra, libero nec imperdiet ultrices, diam purus porttitor erat, non venenatis libero metus ut libero. Phasellus
+                        sodales pretium fringilla. Pellentesque mollis varius eros, ut gravida justo laoreet ut. Aenean dolor risus, viverra non imperdiet eu, porttitor nec tellus. Phasellus sit amet ipsum in tellus vestibulum lacinia vitae ut diam. Duis
+                        sollicitudin, sem sit amet congue hendrerit, lorem tortor ultricies justo, ac consectetur risus nisl ut justo. In lacinia metus id dolor pulvinar, et malesuada mi eleifend. In sodales pharetra placerat. Curabitur lobortis neque
+                        in ante malesuada, et ultrices est fringilla. Quisque mauris metus, vestibulum non lectus non, cursus egestas erat. Donec commodo ac arcu eu commodo. Mauris tempor vulputate tortor non laoreet. Curabitur vitae mauris vitae massa
+                        maximus placerat in nec magna. Morbi blandit aliquam ante, at tincidunt neque pulvinar nec. Nulla vestibulum pharetra justo sit amet commodo. Curabitur porta dui eget neque eleifend, ut tristique nibh viverra. Sed eget odio sed
+                        est semper pulvinar sed nec arcu. Aenean ac magna sed dui ultricies condimentum. Sed id magna sit amet sem dictum pulvinar sit amet eget leo. Maecenas et venenatis odio. Nunc ac egestas sapien. Praesent rhoncus ex sed ipsum tempus,
+                        eget rhoncus neque porttitor. Nam fringilla interdum nunc ac consectetur.</p>
+                    <a [routerLink]="['/home']" class="btn btn-primary">User List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
